@@ -1,0 +1,520 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Work+Sans:wght@100;200&display=swap');
+    </style>
+    <style type="text/css">
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #ffffff;
+            color: #777777;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            width: 100% !important;
+        }
+
+        a,
+        a:link,
+        a:visited {
+            color: #195d93;
+            text-decoration: underline;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: none;
+            color: #09416d !important;
+        }
+
+        h2,
+        h3,
+        h1 a,
+        h2 a,
+        h3 a {
+            color: #195d93 !important;
+        }
+
+        h2 {
+            padding: 0px 0px 10px 0px;
+            margin: 0px 0px 10px 0px;
+        }
+
+        h2.name {
+            padding: 0px 0px 7px 0px;
+            margin: 0px 0px 7px 0px;
+        }
+
+        h3 {
+            padding: 0px 0px 5px 0px;
+            margin: 0px 0px 5px 0px;
+        }
+
+        p {
+            margin: 0 0 14px 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+        }
+
+        a img {
+            border: none;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        td.quote {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 20pt;
+            color: #195d93;
+        }
+
+        span.phone a,
+        span.noLink a {
+            color: 195d93;
+            text-decoration: none;
+        }
+
+        /* Hotmail */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* / Hotmail */
+
+        /* Media queries */
+        @media only screen and (max-device-width: 767px) {
+
+            td[class=shareContainer],
+            td[class=topContainer],
+            td[class=container] {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            table[class=row] {
+                width: 100% !important;
+                max-width: 600px !important;
+            }
+
+            img[class=wideImage],
+            img[class=banner] {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100%;
+            }
+
+            img[id=teamphoto] {
+                width: 100% !important;
+                height: auto !important
+            }
+
+            span[id=fromdetails] {
+                padding-left: 0 !important
+            }
+
+            td[id=fromsection] {
+                padding-left: 0 !important
+            }
+
+            td[id=intro] {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            td[class=oneFromTwo] {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 560px) {
+            td[class=twoFromThree] {
+                display: block;
+                width: 100% !important;
+            }
+
+            td[class=inner2],
+            td[class=authorInfo] {
+                padding-right: 30px !important;
+            }
+
+            td[class=socialIconsContainer] {
+                display: block;
+                width: 100% !important;
+                border-top: 0px !important;
+            }
+
+            td[class=socialIcons],
+            td[class=socialIcons2] {
+                padding-top: 0px !important;
+                text-align: left !important;
+                padding-left: 30px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            html,
+            body {
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            td[class=oneFromTwo] {
+                display: block;
+                width: 100% !important;
+            }
+
+            td[class=inner] {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                font-size: 14px !important;
+            }
+
+            td[class=inner_image] {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                padding-bottom: 25px !important;
+            }
+
+            img[class=wideImage] {
+                width: auto !important;
+                margin: 0 auto;
+            }
+
+            td[class=viewOnline] {
+                display: none !important;
+            }
+
+            td[class=date] {
+                font-size: 14px !important;
+                padding: 10px 30px !important;
+                background-color: #f4f4f4;
+                text-align: left !important;
+            }
+
+            td[class=title] {
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            table[class=quoteContainer] {
+                width: 100% !important;
+                float: none;
+            }
+
+            td[class=quote] {
+                padding-right: 0px !important;
+            }
+
+            td[class=spacer] {
+                padding-top: 18px !important;
+            }
+        }
+
+        @media (max-width: 380px) {
+            td[class=shareContainer] {
+                padding: 0px 10px !important;
+            }
+
+            td[class=topContainer] {
+                padding: 10px 10px 0px 10px !important;
+                background-color: #e9e9e9 !important;
+            }
+
+            td[class=container] {
+                padding: 0px 10px 10px 10px !important;
+            }
+
+            table[class=row] {
+                min-width: 240px !important;
+            }
+
+            img[class=wideImage] {
+                width: 100% !important;
+                max-width: 255px;
+            }
+
+            td[class=authorInfo],
+            td[class=socialIcons2] {
+                text-align: center !important;
+            }
+
+            td[class=spacer2] {
+                display: none !important;
+            }
+
+            td[class=spacer3] {
+                padding-top: 23px !important;
+            }
+
+            table[class=iconContainer],
+            table[class=iconContainer_right] {
+                width: 100% !important;
+                float: none !important;
+            }
+
+            table[class=authorPicture] {
+                float: none !important;
+                margin: 0px auto !important;
+                width: 80px !important;
+            }
+
+            td[class=icon] {
+                padding: 5px 0px 25px 0px !important;
+                text-align: center !important;
+            }
+
+            td[class=icon] img {
+                display: inline !important;
+            }
+
+            img[class=buttonRight] {
+                float: none !important;
+            }
+
+            img[class=bigButton] {
+                width: 100% !important;
+                max-width: 224px;
+                height: auto !important;
+            }
+
+            h2[class=website] {
+                font-size: 22px !important;
+            }
+        }
+
+        /* / Media queries */
+        .appleLinksWhite a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+
+    <!-- Internet Explorer fix -->
+    <!--[if IE]>
+<style type="text/css">
+@media (max-width: 560px) {
+	td[class=twoFromThree], td[class=socialIconsContainer] {float:left; padding:0px;}
+}
+@media only screen and (max-width: 480px) {
+    td[class=oneFromTwo] {float:left; padding:0px;}
+}
+@media (max-width: 380px) {
+    span[class=phone] {display:block !important;}
+}
+</style>
+<![endif]-->
+    <!-- / Internet Explorer fix -->
+
+    <!-- Windows Mobile 7 -->
+    <!--[if IEMobile 7]>
+<style type="text/css">
+    td[class=shareContainer], td[class=topContainer], td[class=container] {padding-left:10px !important; padding-right:10px !important;}
+    table[class=row] {width:100% !important; max-width:600px !important;}
+    td[class=oneFromTwo], td[class=twoFromThree] {float:left; padding:0px; display:block; width:100% !important;}
+    td[class=socialIconsContainer] {float:left; padding:0px; display:block; width:100% !important; border-top:0px !important;}
+    td[class=socialIcons], td[class=socialIcons2] {padding-top:0px !important; text-align:left !important; padding-left:30px !important; padding-bottom:20px !important;}
+    td[class=inner], td[class=inner2], td[class=authorInfo] {padding-left:30px !important; padding-right:30px !important;}
+    td[class=inner_image] {padding-left:30px !important; padding-right:30px !important; padding-bottom:25px !important;}
+    td[class=viewOnline] {display:none !important;}
+    td[class=date] {font-size:14px !important; padding:10px 30px !important; background-color:#f4f4f4; text-align:left !important;}
+    td[class=title] {font-size:24px !important; line-height:32px !important;}
+    table[class=quoteContainer] {width:100% !important; float:none;}
+    td[class=quote] {padding-right:0px !important;}
+    td[class=spacer] {padding-top:18px !important;}
+    span[class=phone] {display:block !important;}
+    img[class=banner] {width:100% !important; height:auto !important; max-width:100%;}
+    img[class=wideImage] {width:auto !important; margin:0 auto;}
+</style>
+<![endif]-->
+    <!-- / Windows Mobile 7 -->
+
+    <!-- Outlook -->
+    <!--[if gte mso 15]>
+<style type="text/css">
+.iconContainer, .quoteContainer {mso-table-rspace:0px; border-right:1px solid #ffffff;}
+.iconContainer_right {mso-table-rspace:0px; border-right:1px solid #ffffff; padding-right:1px;}
+.authorPicture {mso-table-rspace:0px; border-right:1px solid #f4f4f4;}
+</style>
+<![endif]-->
+    <!-- / Outlook -->
+
+</head>
+
+<body>
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <!-- Start of view online, tweet and share -->
+        <!-- End of view online, tweet and share -->
+
+        <!-- Start of logo and date -->
+        <tr>
+            <td class="topContainer" style="background-color:#004269;">
+
+                <table class="row" bgcolor="#004269" align="center" cellpadding="0" cellspacing="0" border="0"
+                    style="border-collapse:collapse; text-align:left; border-spacing:0; width:600px;">
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan=3 align="right" width="122" height="37">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="40">&nbsp;</td>
+                        <td>
+                            <h1 style="color:#ffffff;">MICHELLEHLCN</h1>
+                        </td>
+                        <td width="30">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="30" height=2></td>
+                        <td bgcolor="#ffffff" height=.5>
+                        </td>
+                        <td width="30" height="2"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan=3>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="40">&nbsp;</td>
+                        <td color="#ffffff" style="margin:0 37px;color:#ffffff;font-size:13px">
+                            <p>
+                                <nobr><span class="appleLinksWhite">P: +61 424 342 064</span> |&nbsp;</nobr>
+                                <nobr><span class="appleLinksWhite">E: michellehlcn.au@gmail.com</span></nobr>
+                            </p>
+                        </td>
+                        <td width="40">&nbsp;</td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <!-- End of logo and date -->
+
+        <!-- Start of main container -->
+        <tr>
+            <td class="container" style="padding-bottom:20px; background-color:#e9e9e9;">
+                <table class="row" width="600" bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0"
+                    border="0" style="border-collapse:collapse; text-align:left; border-spacing:0">
+                    <tr style="height:30px">
+                        <td colspan=3>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="40">&nbsp;</td>
+                        <td>
+
+                            <hr class="hozline" size="2" style="height: 2px; width: 100%; margin: 2px 0 2px 0;">
+                            <b>
+                                <div id="formfield_display_ecards_Subject"
+                                    class="formfield_display formfield_display_ecards">Wish you and your family a relaxing, safe and happy Festive Season from Michelle</div>
+                            </b>
+                            <br>
+                            <em>
+                                <div id="formfield_display_ecards_Date"
+                                    class="formfield_display formfield_display_ecards">Sat, 10 Dec 2022</div>
+                            </em>
+
+                            <br />&nbsp;<br>
+                            <div id="formfield_display_ecards_Message"
+                                class="formfield_display formfield_display_ecards" style="background-image: url('https://i.ibb.co/HDxQXGt/pexels-karen-laa-rk-boshoff-9523768.jpg');  background-repeat: no-repeat;
+background-position: center center;
+background-size: cover; ">&nbsp;
+                                <table cellpadding="0" cellspacing="0" border="0"
+                                    style="border-collapse:collapse; border-spacing:0;">
+                                    <tr style="height:30px;"></tr>
+                                    <tr>
+                                        <td width="40"></td>
+                                        <td>
+                                            <div class="content" style="background-color:inherit; height:400px; font-size: 20px;
+                                                font-family: 'La Belle Aurore', cursive;">
+
+                                               
+                                                <p>Doing business with you is a real pleasure. Wishing you a wonderful holiday season. Here’s to a happy and successful new year!</p>
+                                                <p>I look forward to working with you in 2023.</p>
+                                                <p>- From Michelle</p>
+                                            </div>
+                                        </td>
+                                        <td width="40"></td>
+                                    </tr>
+                                    <tr style="height:60px" background-color="#a3bece"></tr>
+                                </table>
+                            </div>
+                            <br>
+                        </td>
+                        <td width="40">&nbsp;</td>
+                    </tr>
+                    <tr bgcolor="#f4f4f4">
+                        <td width="40">&nbsp;</td>
+                        <td class="twoFromThree" valign="top" style="border-top:1px #dddddd dotted;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                                style="border-collapse:collapse; border-spacing:0;">
+                                <tr>
+                                    <td class="inner2"
+                                        style="padding-top:25px; padding-left:30px; padding-right:15px; padding-bottom:25px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+
+                                        <h2 class="website"
+                                            style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:10px; font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; line-height:100%; color:#195d93; font-weight:300;">
+                                        </h2>
+                                        <p><span style="line-height:15pt; display:inline-block;"><strong>MICHELLEHLCN</strong><br />Software
+                                                Developer, Programmer, Excel specialist Freelancer<br />
+                                                <span class="phone"
+                                                    style="line-height:15pt; display:inline-block; color:#195d93;">
+                                                    &#128222; +61 424 342 064
+                                                </span>
+                                            </span>
+                                            <br>
+                                            <br />
+                                            &#169; 2022 Powered by <a style="text-decoration:none; color:#195d93;"
+                                                href="https://michellehlcn.wordpress.com">Michellehlcn</a>, All rights
+                                            reserved.
+                                            <br />
+                                            <strong><a href="">michellehlcn.au@gmail.com</a></strong><br />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="40">&nbsp;</td>
+                    </tr>
+                    <tr bgcolor="#f4f4f4">
+                        <td colspan=3 style="width:100%;border-top: 1px solid #BFCBE1; font-size:9px;" align="left">
+                            Thank you! It's been pleasure to working with you this year. Should you have any further
+                            requests, please contact Michelle on (+61)-424-342-064
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- End of main container -->
+    </table>
+
+</body>
+
+</html>
