@@ -88,7 +88,7 @@ def gmail_send_message(creds):
 
         message['To'] = 'michellehlcn.au@gmail.com'
         message['From'] = 'michellehlcn.au@gmail.com'
-        message['Subject'] = 'Automated draft'
+        message['Subject'] = 'Wish you and your family a relaxing, safe and happy Festive Season from Michelle'
 
         # encoded message
         encoded_message = base64.urlsafe_b64encode(message.as_bytes()) \
